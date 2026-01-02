@@ -1,9 +1,9 @@
 import React from 'react'
 
-const Tile = ({children}) => {
+const Button = ({children}) => {
   return (
     <div>{children}</div>
   )
 }
 
-export default Tile
+export default Button
