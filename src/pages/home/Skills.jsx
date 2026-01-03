@@ -19,9 +19,10 @@ const skillNames = [
   "Performance and Optimization",
 ];
 
-const Skills = () => {
+const Skills = ({id}) => {
+  console.log(id)
   return (
-    <Section>
+    <Section id={id}>
       <Section.Heading>Skills</Section.Heading>
 
       <Box

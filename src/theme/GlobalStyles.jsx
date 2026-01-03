@@ -6,7 +6,9 @@ const GlobalStyles = () => {
       <CssBaseline />
       <MuiGlobalStyles
         styles={(theme) => ({
-
+          html: {
+            scrollBehavior: "smooth",
+          },
         })}
       />
     </>

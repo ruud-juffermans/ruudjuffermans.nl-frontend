@@ -1,10 +1,12 @@
 import React from "react";
 import Section from "@components/Section";
+import { useTheme } from "@emotion/react";
 
 
-const About = () => {
+const About = ({id}) => {
+  const theme = useTheme();
   return (
-    <Section>
+    <Section id={id}>
       <Section.Heading>About</Section.Heading>
       <Section.Text>
         I'm a data engineer based in Amsterdam. My journey into the

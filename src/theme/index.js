@@ -5,6 +5,18 @@ import breakpoints from "./breakpoints";
 const theme = createTheme({
   palette,
   breakpoints,
+    typography: {
+    fontFamily: [
+      "Inter",
+      "-apple-system",
+      "BlinkMacSystemFont",
+      '"Segoe UI"',
+      "Roboto",
+      '"Helvetica Neue"',
+      "Arial",
+      "sans-serif",
+    ].join(","),
+  },
 });
 
 export default theme;

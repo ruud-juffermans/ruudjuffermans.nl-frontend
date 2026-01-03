@@ -1,5 +1,4 @@
-import { Box, Typography } from "@mui/material";
-import { useTheme } from "@mui/material/styles";
+import { Box, Typography, useTheme } from "@mui/material";
 
 const Hero = () => {
   const theme = useTheme();
@@ -30,32 +29,33 @@ const Hero = () => {
             display: "flex",
 
             flexDirection: "column",
-            fontWeight: 900,
             mt: "100px",
-            fontSize: { xs: "40px", lg: "120px" },
+            fontSize: { xs: "40px", lg: "100px" },
             [theme.breakpoints.between("sm", "lg")]: {
               fontSize: "60px",
             },
           }}
         >
-          <Box
+                            <Box
             component="span"
             sx={{
-              background: `linear-gradient(${theme.palette.primary.main}, #999)`,
+              background: `linear-gradient(${theme.palette.primary.main}, #164ccb)`,
               WebkitBackgroundClip: "text",
               WebkitTextFillColor: "transparent",
+              fontWeight: 800,
             }}
           >
             Hello. I'm Ruud.
           </Box>
-
           <Box
             component="span"
             sx={{
               background: `linear-gradient(${theme.palette.primary.main}, #902828)`,
               WebkitBackgroundClip: "text",
               WebkitTextFillColor: "transparent",
-              lineHeight: 1
+              lineHeight: 1,
+              fontWeight: 800,
+              letterSpacing: 3
             }}
           >
             Cryptocurrency Specialist.
@@ -65,13 +65,13 @@ const Hero = () => {
         <Typography
           component="p"
           sx={{
-            maxWidth: { xs: "450px", lg: "750px" },
+            maxWidth: { xs: "450px", lg: "950px" },
             [theme.breakpoints.between("sm", "lg")]: { maxWidth: "700px" },
             lineHeight: 1.6,
             fontWeight: 100,
             opacity: 0.4,
             mt: "100px",
-            fontSize: { xs: "16px", lg: "20px" },
+            fontSize: { xs: "20px", lg: "28px" },
             [theme.breakpoints.between("sm", "lg")]: { fontSize: "16px" },
           }}
         >

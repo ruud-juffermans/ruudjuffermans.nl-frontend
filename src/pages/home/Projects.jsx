@@ -7,22 +7,22 @@ import LinkIcon from "@assets/link.svg";
 
 const projects = [
   {
-    title: "Portfolio Website",
+    title: "Portfolio Website 1",
     github: "https://github.com/ruudjuffermans/React-Portfolio-SPA.v2",
     website: "https://ruudjuffermans.nl",
     keywords: ["React", "Node.js"],
   },
   {
-    title: "Portfolio Website",
+    title: "Portfolio Website 2",
     github: "https://github.com/ruudjuffermans/React-Portfolio-SPA.v2",
     website: "https://ruudjuffermans.nl",
     keywords: ["React", "Node.js"],
   }
 ];
 
-const Projects = () => {
+const Projects = ({id}) => {
   return (
-    <Section>
+    <Section id={id}>
       <Section.Heading>Projects</Section.Heading>
 
       <Box

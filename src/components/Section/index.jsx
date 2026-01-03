@@ -5,9 +5,10 @@ const SectionHeading = ({ children }) => {
         <Typography
             component="h1"
             sx={{
-                fontWeight: 500,
-                mb: "5px",
-                fontSize: "28px",
+                fontWeight: 800,
+                mb: "20px",
+                fontFamily: "Open Sans",
+                fontSize: "36px",
             }}
         >
             {children}
@@ -22,7 +23,8 @@ const SectionText = ({ children }) => {
             sx={{
                 lineHeight: 1.5,
                 // fontWeight: 300,
-                fontSize: "16px",
+                fontFamily: "Open Sans",
+                fontSize: "18px",
             }}
         >
             {children}
@@ -30,7 +32,7 @@ const SectionText = ({ children }) => {
     );
 };
 
-const Section = ({ children }) => {
+const Section = ({ children, id }) => {
     const theme = useTheme();
 
     const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
@@ -39,8 +41,10 @@ const Section = ({ children }) => {
 
     return (
         <Box
+         id={id}
             sx={{
                 width: "100%",
+                padding: "60px 0px 80px",
             }}
         >
             {children}
@@ -48,7 +52,7 @@ const Section = ({ children }) => {
     );
 };
 
-const SectionContainer = ({ children }) => {
+const SectionContainer = ({ children, backgroundColor }) => {
     const theme = useTheme();
 
     const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
@@ -60,7 +64,8 @@ const SectionContainer = ({ children }) => {
             sx={{
                 alignItems: "center",
                 width: "100vw",
-                padding: "20px"
+                padding: "200px 20px 120px",
+                backgroundColor: {backgroundColor}
             }}
         >
             <Box

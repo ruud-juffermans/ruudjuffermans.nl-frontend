@@ -45,11 +45,12 @@ const experiences = [
   },
 ];
 
-const Experience = () => {
-  const theme = useTheme();
-
+const Experience = ({id}) => {
+  const theme = useTheme()
+  console.log(id)
   return (
-    <Section>
+
+    <Section id={"experience"}>
       <Section.Heading>Experience</Section.Heading>
       <Box sx={{
         display: "flex",

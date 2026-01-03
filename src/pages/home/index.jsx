@@ -9,16 +9,16 @@ import Section from "@components/Section";
 
 const Home = () => {
   return (
-    <>
-      <Hero />
+    <div id={"home"}>
+        <Hero/>
       <Section.Container>
-        <About />
-        <Experience />
-        <Skills />
-        <Projects />
-        <Posts />
+        <About id={"about"} />
+        <Skills id={"skills"} />
+        <Experience id={"experience"} />
+        <Projects id={"projects"} />
+        <Posts id={"posts"} />
       </Section.Container>
-    </>
+    </ div>
   );
 };
 

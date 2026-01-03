@@ -37,11 +37,11 @@ const posts = [
   },
 ];
 
-const Posts = () => {
+const Posts = ({id}) => {
   const theme = useTheme();
 
   return (
-    <Section>
+    <Section id={id}>
       <Section.Heading>Posts</Section.Heading>
 
       <Box
